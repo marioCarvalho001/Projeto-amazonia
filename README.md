@@ -1,6 +1,6 @@
 ##Amazôni-Blog🌎
 
-😀Esse Projeto é um Blog sobre a amazonia e alguns animais. O projeto tinha como objetivo treinar e fixar meu conhecimento em css3.
+😀Esse Projeto é um Blog sobre a amazônia e alguns animais. O projeto tinha como objetivo treinar e fixar meu conhecimento em css3.
 
 
 ##Confira o resultado clicando na imagem.
