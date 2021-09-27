@@ -21,7 +21,8 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 20px;
+  object-fit: cover;
 }
 /*Bloco de linhha de codigo universal do site*/
 
@@ -73,8 +74,7 @@ img {
 .introdução {
   overflow: hidden;
   width: 100%;
-  height: 600px;
-  margin: 74px auto 0 auto;
+  margin: 74px auto 100px auto;
   background: url("../img/fundo-intro.png") no-repeat center;
   background-size: cover;
   display: flex;
@@ -83,11 +83,10 @@ img {
 .texto_amazonia {
   margin-left: 50px;
   height: 450px;
+  padding-top: 100px;
 }
 .introdução p {
   max-width: 500px;
-  min-width: 200px;
-  height: auto;
   align-items: center;
   font-size: 1.322em;
   color: #e9e46f;
@@ -102,11 +101,7 @@ img {
 /*Fim da Section Intro*/
 
 /*section comentario*/
-.citacao {
-  height: 600px;
-  box-sizing: border-box;
-  padding-top: 50px;
-}
+
 .comentario {
   max-width: 600px;
   height: 300px;
@@ -128,119 +123,123 @@ img {
 .citacao::after {
   content: "";
   display: block;
-  box-sizing: border-box;
   width: 160px;
   height: 2px;
   background: #faff00;
   margin: 50px auto;
 }
+.citacao::after {
+  margin-bottom: 0;
+}
 
 /*Fim da Section comentario*/
 
 /*section animais*/
-.box-1 {
-  margin: 0 auto;
-  width: 1000px;
-  display: grid;
-  grid-template-columns: 4fr 3fr 6fr 4fr 3fr;
-  grid-template-rows: auto;
-  grid-gap: 20px;
-  grid-template-areas:
-    " arara sapo preguica coruja piranha"
-    " arara formiga preguica coruja piranha"
-    " arara peixe-boy jacaretinga coruja tucano"
-    " onca onca harpia guariba guariba"
-    " uacari macaco boto guariba guariba"
-    " cascavel cascavel capivara bicho-pau bicho-pau"
-    " sucuri sucuri capivara jararaca jararaca"
-    " pirarucu pirarucu pirarucu pirarucu pirarucu";
-}
 .animais {
+  margin-top: 100px;
+  box-sizing: border-box;
+}
+.box-1 {
   background: url(../img/imagem-fundo-animais.jpg) no-repeat center;
   background-size: cover;
-  padding: 20px 50px;
+  padding: 100px 50px;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-rows: 150px 150px 150px;
+  grid-gap: 10px;
+  justify-items: stretch;
+  grid-template-areas:
+    " chifre coruja bicho uacari capivara harpia"
+    " cururu coruja cascavel uacari sucuri harpia"
+    " formiga jacaretinga cascavel prego sucuri harpia";
 }
-.arara {
-  grid-area: arara;
+
+.harpia {
+  grid-area: harpia;
+}
+.chifre {
+  grid-area: chifre;
+}
+.cururu {
+  grid-area: cururu;
 }
 .formiga {
   grid-area: formiga;
 }
-.sapo {
-  grid-area: sapo;
-}
-.peixe-boy {
-  grid-area: peixe-boy;
-}
-.preguica {
-  grid-area: preguica;
+.coruja {
+  grid-area: coruja;
 }
 .jacaretinga {
   grid-area: jacaretinga;
 }
-.coruja {
-  grid-area: coruja;
-}
-.piranha {
-  grid-area: piranha;
-}
-.tucano {
-  grid-area: tucano;
-}
-.onca {
-  grid-area: onca;
-}
-.uacari {
-  grid-area: uacari;
-}
-.macaco {
-  grid-area: macaco;
-}
-.harpia {
-  grid-area: harpia;
-}
-.guariba {
-  grid-area: guariba;
+.bicho {
+  grid-area: bicho;
 }
 .cascavel {
   grid-area: cascavel;
 }
-.sucuri {
-  grid-area: sucuri;
+.uacari {
+  grid-area: uacari;
+}
+.prego {
+  grid-area: prego;
 }
 .capivara {
   grid-area: capivara;
 }
-.bicho-pau {
-  grid-area: bicho-pau;
+.sucuri {
+  grid-area: sucuri;
 }
-.jararaca {
-  grid-area: jararaca;
-}
-.pirarucu {
-  background: url(../img/pirarucu.jpg) no-repeat center;
-  width: 100%;
-  height: 370px;
-  grid-area: pirarucu;
-  background-size: cover;
-}
+
 /*Fim da Section animais*/
+/*Peoma_rio*/
+.poema_rio {
+  margin-top: 200px;
+  max-width: 100%;
+  height: 500px;
+  background: url(../img/logoa.jpg) no-repeat center;
+  background-size: cover;
+  background-position: bottom;
+}
+.vem_pescar {
+  box-sizing: border-box;
+  padding: 5px 30px;
+  width: 400px;
+  height: 500px;
+  margin-left: 50px;
+  background: rgba(77, 103, 61, 59%);
+  color: #fff338;
+  text-align: center;
+  font-size: 0.72em;
+  letter-spacing: 0.1em;
+  line-height: 2.5em;
+}
+.vem_pescar h2,
+cite {
+  margin: 10px auto 5px auto;
+}
+.vem_pescar cite {
+  display: block;
+  text-align: end;
+}
+/*Poema_rio*/
 
 /*citacao-indio*/
 .citacao-indio {
-  height: 260px;
   color: #2b2525;
   text-align: center;
   font-style: italic;
 }
 .citacao-indio p {
-  margin-bottom: 10px;
   font-size: 1.125em;
 }
-.citacao.citacao-indio::before,
+.citacao.citacao-indio::before {
+  background: #9fddc2;
+  margin-top: 100px;
+}
 .citacao.citacao-indio::after {
   background: #9fddc2;
-  margin: 30px auto;
+  margin-bottom: 100px;
 }
 /* Fim citacao-indio*/
 
@@ -264,9 +263,9 @@ img {
 }
 .indio_info p {
   text-align: justify;
-  max-width: 600px;
+  max-width: 500px;
   height: auto;
-  font-size: 1.225em;
+  font-size: 1em;
   margin-bottom: 5px;
 }
 .indio {
@@ -345,6 +344,11 @@ img {
 }
 .perfil_info a {
   color: #193e2d;
+}
+.perfil_info p {
+  margin-top: 10px;
+  line-height: 1.5em;
+  font-weight: bold;
 }
 
 footer {
