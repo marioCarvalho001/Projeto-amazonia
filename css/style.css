@@ -24,6 +24,9 @@ img {
   border-radius: 20px;
   object-fit: cover;
 }
+.fundo {
+  padding-top: 150px;
+}
 /*Bloco de linhha de codigo universal do site*/
 
 /*Fim de bloco deLinhha de codigo universal do site*/
@@ -54,6 +57,7 @@ img {
   justify-content: right;
 }
 .barra_menu ul a {
+  font-size: 0.9em;
   color: #4b5c4a;
 }
 .barra_menu li + li {
@@ -136,13 +140,13 @@ img {
 
 /*section animais*/
 .animais {
-  margin-top: 100px;
+  padding-top: 100px;
   box-sizing: border-box;
 }
 .box-1 {
   background: url(../img/imagem-fundo-animais.jpg) no-repeat center;
   background-size: cover;
-  padding: 100px 50px;
+  padding: 70px 50px;
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-rows: 150px 150px 150px;
@@ -193,8 +197,8 @@ img {
 
 /*Fim da Section animais*/
 /*Peoma_rio*/
+
 .poema_rio {
-  margin-top: 200px;
   max-width: 100%;
   height: 500px;
   background: url(../img/logoa.jpg) no-repeat center;
@@ -222,7 +226,7 @@ cite {
   display: block;
   text-align: end;
 }
-/*Poema_rio*/
+/* Fim Poema_rio*/
 
 /*citacao-indio*/
 .citacao-indio {
@@ -239,7 +243,6 @@ cite {
 }
 .citacao.citacao-indio::after {
   background: #9fddc2;
-  margin-bottom: 100px;
 }
 /* Fim citacao-indio*/
 
@@ -248,7 +251,7 @@ cite {
 .indios {
   width: 100%;
   height: 600px;
-  padding: 100px 50px;
+  padding: 70px 50px;
   box-sizing: border-box;
   background: #e8e46e;
   display: grid;
@@ -278,10 +281,9 @@ cite {
 /*peoma*/
 
 .poema {
+  padding: 0 50px 50px 0;
   width: 100%;
-  height: 600px;
-  padding: 50px;
-  background: url(../img/amazonia.jpg) no-repeat center;
+  background: url(../img/amazonia.jpg) no-repeat center fixed;
   background-size: cover;
   display: grid;
   justify-items: right;
@@ -342,13 +344,21 @@ cite {
   padding: 30px 50px;
   background: #24b274;
 }
+
+.perfil_info li {
+  margin: 15px 0;
+}
+.perfil_info li img {
+  display: inline-block;
+  vertical-align: text-bottom;
+  border-radius: 0;
+  margin-right: 7px;
+  width: 20px;
+  height: 20px;
+}
+
 .perfil_info a {
   color: #193e2d;
-}
-.perfil_info p {
-  margin-top: 10px;
-  line-height: 1.5em;
-  font-weight: bold;
 }
 
 footer {
