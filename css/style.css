@@ -56,12 +56,29 @@ img {
   align-items: right;
   justify-content: right;
 }
+@media (max-width: 400px) {
+  .barra_menu {
+    grid-template-columns: 1fr;
+  }
+  .barra_menu ul,
+  h1 {
+    justify-content: center;
+    display: grid;
+  }
+  .menu li {
+    text-align: center;
+    margin-bottom: 5px;
+    width: 150px;
+  }
+}
 .barra_menu ul a {
   font-size: 0.9em;
   color: #4b5c4a;
 }
-.barra_menu li + li {
-  margin-left: 30px;
+@media (min-width: 500px) {
+  .barra_menu li + li {
+    margin-left: 30px;
+  }
 }
 .menu li {
   display: block;
