@@ -1,4 +1,7 @@
 @media (max-width: 700px) {
+  .fundo {
+    padding-top: 30px;
+  }
   .barra_menu {
     position: relative;
     grid-template-columns: 1fr;
@@ -19,7 +22,7 @@
   .introdução,
   p {
     box-sizing: border-box;
-    padding: 20px;
+    padding: 10px;
     margin: 0;
     font-size: 0.7em;
   }
@@ -27,20 +30,62 @@
     margin: 0;
     padding: 0 !important;
   }
+
+  .comentario {
+    height: 200px;
+    padding-top: 40px;
+  }
+
+  .comentario p {
+    font-size: 0.6em;
+    max-width: 350px;
+    margin-bottom: 30px;
+  }
+
+  .citacao::before,
+  .citacao::after {
+    margin: 20px auto;
+  }
+  .animais {
+    padding-top: 20px;
+  }
   .poema_rio {
+    margin-top: 40px;
     justify-items: center;
+  }
+  .vem_pescar {
+    color: #fff;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    line-height: 1.9em;
+    margin-left: 0;
   }
   .indio_info p {
     font-size: 0.6em;
   }
   .indios {
-    grid-template-columns: 2fr 200px;
+    padding-top: 20px;
+    grid-template-columns: 300px;
+    grid-template-rows: 300px 300px;
+    text-align: center;
     justify-content: center;
   }
-  .indio img {
-    margin-top: 115px;
-    height: 300px;
+
+  .indio_info h1 {
+    margin-bottom: 20px;
   }
+
+  .indio img {
+    margin: 0 auto;
+    width: 200px;
+    height: 250px;
+  }
+
+  .citacao.citacao-indio::before {
+    background: #9fddc2;
+    margin-top: 50px;
+  }
+
   .contato {
     display: grid;
     grid-template-columns: 1fr;

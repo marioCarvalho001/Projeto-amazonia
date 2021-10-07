@@ -131,7 +131,7 @@ img {
   content: "";
   display: block;
   width: 160px;
-  height: 2px;
+  height: 1px;
   background: #faff00;
   margin: 50px auto;
 }
